@@ -15,4 +15,8 @@ app.get("/", (req, res)=> {
     res.render("index");
 })
 
-app.listen(4009, ()=> console.log("app started!"))
+if(process.env.NODE_ENV === "production") {
+  app.listen(process.env.PORT, process.env.IP, ()=> console.log("prod app started"))
+} else {
+  app.listen(4009, ()=> console.log("local app started!"))
+}
