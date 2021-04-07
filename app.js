@@ -10,7 +10,6 @@ app.use( i18n( {
   siteLangs: ["ht","en"],
   textsVarName: 'translation',
   defaultLang: 'ht',
-  browserEnable: 'true'
 }));
 
 app.get("/", (req, res)=> {
