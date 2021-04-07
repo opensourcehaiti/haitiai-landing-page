@@ -26,17 +26,6 @@
   </head>
 
   <body>
-    <div>
-      Choose your language:
-      <ul>
-        <li><a class="<%=(lang=="ht"?"active":"")%>" href="/?clang=ht">ht</a></li>
-        <li><a class="<%=(lang=="en"?"active":"")%>" href="/?clang=en">English</a></li>
-      </ul> 
-     
-        <p><%=translation.WELCOME_MSG%></p>
-      
-    </div>
-
     <!--===== Markup For "Header" Starts From Here =====-->
     <header class="header">
       <div class="top">
@@ -47,14 +36,11 @@
           <div class="language_icons">
             <ul>
               <li>
-                <a href="javascript:void(0)"
-                  ><img src="images/HT.png" alt=""
-                /></a>
+                <a class="<%=(lang=="ht"?"active":"")%>" href="/?clang=ht"><img src="images/HT.png" alt=""
+                  /></a>
               </li>
               <li>
-                <a href="javascript:void(0)"
-                  ><img src="images/US.png" alt=""
-                /></a>
+                <a class="<%=(lang=="en"?"active":"")%>" href="/?clang=en"><img src="images/US.png" alt=""/></a>
               </li>
             </ul>
           </div>
@@ -65,8 +51,8 @@
           <img src="images/left_avatar.png" class="img-fluid" alt="" />
         </div>
         <div class="single_part middle_texts">
-          <h1>Haiti</h1>
-          <h3>Earn crypto easily</h3>
+          <h1><%=translation.haiti%></h1>
+          <h3><%=translation.EarnCryptoEasily%>.</h3>
         </div>
         <div class="single_part right_image">
           <img src="images/right_avatar.png" class="img-fluid" alt="" />
@@ -97,8 +83,7 @@
             </div>
             <div class="texts">
               <a href="https://airtable.com/shrxJTTQJxclUiMw7" target="_blank"
-                >Join the community</a
-              >.
+                ><%=translation.JoinTheCommunity%></a>.
             </div>
             <br />
             <div class="icon">
@@ -111,8 +96,7 @@
             </div>
             <div class="texts">
               <a href="https://app.lagatos.com/" target="_blank"
-                >Create a digital wallet</a
-              >.
+                ><%=translation.CreateADigitalWallet%></a>.
             </div>
             <br />
             <div class="icon">
@@ -137,10 +121,9 @@
             </div>
             <div class="texts">
               <a href="https://t.me/OpenSourceHaiti_Bot" target="_blank"
-                >Download a chat app and answer questions via chat</a
-              >.
+                ><%=translation.DownloadApp%></a>.
               <br />
-              <p>You’ll then receive crypto to your digital wallet.</p>
+              <p><%=translation.ReceiveCrypto%>.</p>
             </div>
             <br />
             <div class="icon">
@@ -160,12 +143,12 @@
         <ul>
           <li>
             <a href="https://t.me/OpenSourceHaiti_Bot" target="_blank"
-              >START EARNING NOW</a
+              ><%=translation.StartEarningNow%></a
             >
           </li>
           <li>
             <a href="https://askhaiti.com/" target="_blank"
-              >LEARNERS: ASK A QUESTION</a
+              ><%=translation.Learners%></a
             >
           </li>
         </ul>
@@ -181,8 +164,12 @@
           <a href="https://opensourcehaiti.com/" target="_blank"
             >OpenSourceHaiti.com</a
           >
-          in colloboration with
+          <%=translation.Colloboration%>
           <a href="http://lagatos.com/" target="_blank">Lagatos.com</a>
+        </p>
+        <br>
+        <p>
+          <%=translation.MadeBy%>
         </p>
       </div>
     </footer>
