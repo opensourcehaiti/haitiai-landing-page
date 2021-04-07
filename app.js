@@ -7,8 +7,10 @@ app.set("view engine", "ejs");
 
 app.use( i18n( {
   translationsPath : __dirname + "/public/i18n",
-  siteLangs: ["en","ht"],
-  textsVarName: 'translation'
+  siteLangs: ["ht","en"],
+  textsVarName: 'translation',
+  defaultLang: 'ht',
+  browserEnable: 'true'
 }));
 
 app.get("/", (req, res)=> {
