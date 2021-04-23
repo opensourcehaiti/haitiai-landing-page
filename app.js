@@ -19,5 +19,5 @@ app.get("/", (req, res)=> {
 if(process.env.NODE_ENV === "production") {
   app.listen(process.env.PORT, process.env.IP, ()=> console.log("prod app started"))
 } else {
-  app.listen(4009, ()=> console.log("local app started!"))
+  app.listen(3000, ()=> console.log("local app started!"))
 }
